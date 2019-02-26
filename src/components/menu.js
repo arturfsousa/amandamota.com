@@ -8,14 +8,17 @@ const menuItems = css`
   display: flex;
 
   li {
-    margin: 0;
+    margin: 0 0 0 35px;
+  }
+
+  li:first-child {
+    margin-left: 0;
   }
 `
 
 const menuItem = css`
   color: #afc8ea;
   text-decoration: none;
-  margin-left: 35px;
   text-transform: uppercase;
   font-size: 17px;
   transition: color 0.4s ease;

@@ -6,22 +6,21 @@ import { css } from "@emotion/core"
 import logo from "../images/logo.png"
 import Menu from "./menu"
 
-const header = css`
-  background-color: #80a1d4;
-  height: 105px;
-`
+const header = theme =>
+  css`
+    background-color: ${theme.colors.primary};
+    height: 105px;
+  `
 
-const gridContainer = css`
-  margin: 0 auto;
-  max-width: 1024px;
-  padding: 0 1.0875rem;
-  height: 100%;
-`
-
-const headerContent = css`
+const headerContent = theme => css`
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  margin: 0 auto;
+  max-width: ${theme.grid.maxWidth};
+  padding: 0 ${theme.grid.colPadding};
+  height: 100%;
 `
 
 const headerLogo = css`
@@ -35,7 +34,7 @@ const headerLogo = css`
 
 const Header = ({ siteName }) => (
   <header css={header}>
-    <div css={[gridContainer, headerContent]}>
+    <div css={headerContent}>
       <Link to="/" css={headerLogo}>
         <img src={logo} alt={siteName} />
       </Link>

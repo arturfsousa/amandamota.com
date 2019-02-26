@@ -16,8 +16,8 @@ const menuItems = css`
   }
 `
 
-const menuItem = css`
-  color: #afc8ea;
+const menuItem = theme => css`
+  color: ${theme.colors.hover};
   text-decoration: none;
   text-transform: uppercase;
   font-size: 17px;

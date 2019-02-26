@@ -1,9 +1,11 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { css } from "@emotion/core"
+import { ThemeProvider } from "emotion-theming"
 import { StaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
+import theme from "../theme"
 import "./layout.css"
 
 const background = imageUrl =>
@@ -17,10 +19,11 @@ const background = imageUrl =>
     width: 100%;
   `
 
-const main = css`
+const main = theme => css`
+  position: relative;
   margin: 0 auto;
-  max-width: 1024px;
-  padding: 0 1.0875rem 1.5rem;
+  max-width: ${theme.grid.maxWidth};
+  padding: 1.5rem ${theme.grid.colPadding} 1.5rem;
 `
 
 const Layout = ({ children, bgImage }) => (
@@ -35,11 +38,11 @@ const Layout = ({ children, bgImage }) => (
       }
     `}
     render={data => (
-      <React.Fragment>
+      <ThemeProvider theme={theme}>
         <Header siteName={data.site.siteMetadata.siteName} />
         {bgImage && <div css={background(bgImage)} />}
         <main css={main}>{children}</main>
-      </React.Fragment>
+      </ThemeProvider>
     )}
   />
 )

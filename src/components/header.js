@@ -2,7 +2,9 @@ import React from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
 import { css } from "@emotion/core"
+
 import logo from "../images/logo.png"
+import Menu from "./menu"
 
 const header = css`
   background-color: #80a1d4;
@@ -11,7 +13,7 @@ const header = css`
 
 const gridContainer = css`
   margin: 0 auto;
-  max-width: 960px;
+  max-width: 1024px;
   padding: 1.45rem 1.0875rem;
   height: 100%;
 `
@@ -19,6 +21,7 @@ const gridContainer = css`
 const headerContent = css`
   display: flex;
   align-items: center;
+  justify-content: space-between;
 `
 
 const headerLogo = css`
@@ -32,12 +35,11 @@ const headerLogo = css`
 
 const Header = ({ siteTitle }) => (
   <header css={header}>
-    <div css={gridContainer}>
-      <div css={headerContent}>
-        <Link to="/" css={headerLogo}>
-          <img src={logo} alt={siteTitle} />
-        </Link>
-      </div>
+    <div css={[gridContainer, headerContent]}>
+      <Link to="/" css={headerLogo}>
+        <img src={logo} alt={siteTitle} />
+      </Link>
+      <Menu />
     </div>
   </header>
 )

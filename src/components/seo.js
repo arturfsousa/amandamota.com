@@ -15,8 +15,8 @@ function SEO({ description, lang, meta, keywords, title }) {
             htmlAttributes={{
               lang,
             }}
-            title={title}
-            titleTemplate={`%s | ${data.site.siteMetadata.title}`}
+            title={title ? title : data.site.siteMetadata.title}
+            titleTemplate={title ? `%s | ${data.site.siteMetadata.title}` : ""}
             meta={[
               {
                 name: `description`,
@@ -24,7 +24,7 @@ function SEO({ description, lang, meta, keywords, title }) {
               },
               {
                 property: `og:title`,
-                content: title,
+                content: title || data.site.siteMetadata.title,
               },
               {
                 property: `og:description`,
@@ -44,7 +44,7 @@ function SEO({ description, lang, meta, keywords, title }) {
               },
               {
                 name: `twitter:title`,
-                content: title,
+                content: title || data.site.siteMetadata.title,
               },
               {
                 name: `twitter:description`,
@@ -68,9 +68,9 @@ function SEO({ description, lang, meta, keywords, title }) {
 }
 
 SEO.defaultProps = {
-  lang: `en`,
+  lang: `pt-br`,
   meta: [],
-  keywords: [],
+  keywords: [`amandamota`, `dermato`, `dermatologia`],
 }
 
 SEO.propTypes = {
@@ -78,7 +78,7 @@ SEO.propTypes = {
   lang: PropTypes.string,
   meta: PropTypes.array,
   keywords: PropTypes.arrayOf(PropTypes.string),
-  title: PropTypes.string.isRequired,
+  title: PropTypes.string,
 }
 
 export default SEO

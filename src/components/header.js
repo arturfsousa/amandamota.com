@@ -14,7 +14,7 @@ const header = css`
 const gridContainer = css`
   margin: 0 auto;
   max-width: 1024px;
-  padding: 1.45rem 1.0875rem;
+  padding: 0 1.0875rem;
   height: 100%;
 `
 

@@ -1,8 +1,11 @@
+const config = require("./src/config")
+
 module.exports = {
   siteMetadata: {
-    title: `Amanda Mota Dermatologista`,
-    description: `Dermatologista formada pela UERJ, com título de especialista pela SBD, atua no consultorio privado e como professora na residencia em dermatologia do HCA.`,
-    author: `@arturfsousa`,
+    title: config.meta.title,
+    description: config.meta.description,
+    author: config.meta.author,
+    siteName: config.meta.siteName,
   },
   plugins: [
     `gatsby-plugin-emotion`,
@@ -20,7 +23,7 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `gatsby-starter-default`,
-        short_name: `Amanda Mota`,
+        short_name: `Amanda Dermato`,
         start_url: `/`,
         background_color: `#80a1d4`,
         theme_color: `#80a1d4`,

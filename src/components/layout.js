@@ -11,14 +11,14 @@ const Layout = ({ children }) => (
       query SiteTitleQuery {
         site {
           siteMetadata {
-            title
+            siteName
           }
         }
       }
     `}
     render={data => (
       <React.Fragment>
-        <Header siteTitle={data.site.siteMetadata.title} />
+        <Header siteName={data.site.siteMetadata.siteName} />
         <div
           style={{
             margin: `0 auto`,

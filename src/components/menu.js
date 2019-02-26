@@ -11,7 +11,7 @@ const menuItems = css`
     margin: 0 0 0 35px;
   }
 
-  li:first-child {
+  li:first-of-type {
     margin-left: 0;
   }
 `
@@ -41,7 +41,15 @@ const Menu = () => (
     <ul css={menuItems}>
       {items.map(item => (
         <li key={item.to}>
-          <Link to={item.to} css={menuItem}>
+          <Link
+            to={item.to}
+            css={menuItem}
+            activeStyle={{
+              color: "white",
+              borderBottom: "1px solid black",
+              paddingBottom: "5px",
+            }}
+          >
             {item.label}
           </Link>
         </li>

@@ -33,11 +33,11 @@ const headerLogo = css`
   }
 `
 
-const Header = ({ siteTitle }) => (
+const Header = ({ siteName }) => (
   <header css={header}>
     <div css={[gridContainer, headerContent]}>
       <Link to="/" css={headerLogo}>
-        <img src={logo} alt={siteTitle} />
+        <img src={logo} alt={siteName} />
       </Link>
       <Menu />
     </div>
@@ -45,11 +45,7 @@ const Header = ({ siteTitle }) => (
 )
 
 Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: ``,
+  siteName: PropTypes.string.isRequired,
 }
 
 export default Header

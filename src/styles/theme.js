@@ -1,4 +1,10 @@
 export default {
+  header: {
+    height: {
+      small: "50px",
+      large: "105px",
+    },
+  },
   colors: {
     primary: "rgb(128,161,212)",
     hover: "rgb(175,200,234)",

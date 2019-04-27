@@ -4,19 +4,23 @@ import { Link } from "gatsby"
 import { css } from "@emotion/core"
 
 import Menu from "./Menu"
+import mq from "../styles/responsive"
 import logo from "../images/logo.svg"
 
 const header = theme =>
   css`
     background-color: ${theme.colors.primary};
-    height: 105px;
+    height: ${theme.header.height.small};
+
+    ${mq("mediumUp")} {
+      height: ${theme.header.height.large};
+    }
   `
 
 const headerContent = theme => css`
   display: flex;
   align-items: center;
   justify-content: space-between;
-
   margin: 0 auto;
   max-width: ${theme.grid.maxWidth};
   padding: 0 ${theme.grid.colPadding};
@@ -28,8 +32,12 @@ const headerLogo = css`
   align-items: center;
 
   img {
-    width: 252px;
+    width: 160px;
     margin: 0;
+
+    ${mq("mediumUp")} {
+      width: 252px;
+    }
   }
 `
 

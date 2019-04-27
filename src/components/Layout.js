@@ -6,20 +6,25 @@ import { StaticQuery, graphql } from "gatsby"
 
 import Header from "./Header"
 import theme from "../styles/theme"
+import mq from "../styles/responsive"
 
 import "../styles/reset.css"
 import "../styles/fonts.css"
 import "../styles/base.css"
 
-const background = imageUrl =>
+const background = imageUrl => theme =>
   css`
     background: url(${imageUrl}) no-repeat center center;
     background-size: cover;
     position: fixed;
-    top: 105px;
+    top: ${theme.header.height.small};
     left: 0;
     height: 100vh;
     width: 100%;
+
+    ${mq("mediumUp")} {
+      top: ${theme.header.height.large};
+    }
   `
 
 const main = theme => css`

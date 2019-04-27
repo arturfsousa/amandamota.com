@@ -6,7 +6,9 @@ import { StaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
 import theme from "../theme"
+
 import "./layout.css"
+import "./fonts.css"
 
 const background = imageUrl =>
   css`

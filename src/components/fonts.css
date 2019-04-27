@@ -1,0 +1,23 @@
+@font-face {
+  font-family: "Antonio";
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/Antonio-Regular.woff2) format("woff2");
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: "MyriadPro";
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/MyriadPro-Cond.woff2) format("woff2");
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: "MyriadPro";
+  font-style: normal;
+  font-weight: 700;
+  src: url(../fonts/MyriadPro-Bold.woff2) format("woff2");
+  font-display: fallback;
+}

@@ -3,6 +3,7 @@ import { css } from "@emotion/core"
 import Layout from "../components/Layout"
 import SEO from "../components/SEO"
 import Button from "../components/Button"
+import mq from "../styles/responsive"
 
 import bgHome from "../images/bg-home.png"
 
@@ -10,7 +11,11 @@ const fixedContainer = css`
   position: fixed;
   width: 100%;
   left: 0;
-  bottom: 80px;
+  bottom: 30px;
+
+  ${mq("mediumUp")} {
+    bottom: 80px;
+  }
 `
 
 const gridContainer = theme => css`

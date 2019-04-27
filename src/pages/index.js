@@ -16,6 +16,7 @@ const fixedContainer = css`
 const gridContainer = theme => css`
   margin: 0 auto;
   max-width: ${theme.grid.maxWidth};
+  padding: 0 ${theme.grid.colPadding};
   display: flex;
   align-items: flex-start;
 `

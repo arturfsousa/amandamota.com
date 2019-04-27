@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import { Link } from "gatsby"
 import { css } from "@emotion/core"
 
-import logo from "../images/logo.png"
+import logo from "../images/logo.svg"
 import Menu from "./menu"
 
 const header = theme =>
@@ -28,6 +28,7 @@ const headerLogo = css`
   align-items: center;
 
   img {
+    width: 252px;
     margin: 0;
   }
 `

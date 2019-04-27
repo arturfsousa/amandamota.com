@@ -1,6 +1,7 @@
 import React from "react"
 import { css } from "@emotion/core"
-import { rgba } from "../theme"
+import { rgba } from "../styles/theme"
+import mq from "../styles/responsive"
 
 import iconWhatsApp from "../images/icon-whatsapp.svg"
 
@@ -14,7 +15,9 @@ const button = theme => css`
   color: ${theme.colors.dark};
 
   :hover {
-    color: ${theme.colors.primary};
+    ${mq("mediumUp")} {
+      color: ${theme.colors.primary};
+    }
   }
 `
 
@@ -48,9 +51,13 @@ const buttonLabel = theme => css`
   padding: 0 10px;
   font-family: ${theme.typography.antonio};
   font-weight: 400;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   letter-spacing: -0.02rem;
   text-transform: lowercase;
+
+  ${mq("mediumUp")} {
+    font-size: 1.4rem;
+  }
 `
 
 const icons = {

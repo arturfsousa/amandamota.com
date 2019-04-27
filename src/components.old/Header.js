@@ -3,8 +3,8 @@ import PropTypes from "prop-types"
 import { Link } from "gatsby"
 import { css } from "@emotion/core"
 
+import Menu from "./Menu"
 import logo from "../images/logo.svg"
-import Menu from "./menu"
 
 const header = theme =>
   css`

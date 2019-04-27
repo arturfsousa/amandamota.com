@@ -4,11 +4,12 @@ import { css } from "@emotion/core"
 import { ThemeProvider } from "emotion-theming"
 import { StaticQuery, graphql } from "gatsby"
 
-import Header from "./header"
-import theme from "../theme"
+import Header from "./Header"
+import theme from "../styles/theme"
 
-import "./layout.css"
-import "./fonts.css"
+import "../styles/reset.css"
+import "../styles/fonts.css"
+import "../styles/base.css"
 
 const background = imageUrl =>
   css`

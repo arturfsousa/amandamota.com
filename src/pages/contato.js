@@ -1,16 +1,10 @@
 import React from "react"
 import { css } from "@emotion/core"
-import {
-  PhoneAndroid,
-  MailOutline,
-  HomeTwoTone as Home,
-  Business,
-} from "@material-ui/icons"
+import { PhoneAndroid, MailOutline, Business } from "@material-ui/icons"
 
 import Layout from "../components/Layout"
 import SEO from "../components/SEO"
 import Head from "../components/Head"
-import mq from "../styles/responsive"
 
 const section = theme => css`
   text-align: center;

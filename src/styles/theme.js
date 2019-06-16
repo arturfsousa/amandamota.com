@@ -12,6 +12,7 @@ export default {
     gray: {
       50: "#F4F4F4",
       100: "#EDEDED",
+      200: "#bdbec0",
     },
   },
   grid: {

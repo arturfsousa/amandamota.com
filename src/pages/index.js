@@ -50,13 +50,21 @@ const bgImage = theme =>
     }
   `
 
+const whatsAppNumber = "5521995555595"
+const whatsAppMessage = encodeURIComponent(
+  "Olá Dr. Amanda! Gostaria de agentar uma consulta."
+)
+const whatsAppUrl = `https://wa.me/${whatsAppNumber}?text=${whatsAppMessage}`
+
 const IndexPage = () => (
   <Layout>
     <SEO />
     <div css={bgImage} />
     <div css={fixedContainer}>
       <div css={gridContainer}>
-        <Button icon="whatsapp">Agende uma consulta</Button>
+        <Button icon="whatsapp" url={whatsAppUrl}>
+          Agende uma consulta
+        </Button>
       </div>
     </div>
   </Layout>

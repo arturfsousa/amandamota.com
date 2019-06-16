@@ -1,4 +1,5 @@
 import React from "react"
+import PropTypes from "prop-types"
 import { css } from "@emotion/core"
 import { rgba } from "../styles/theme"
 import mq from "../styles/responsive"
@@ -13,6 +14,11 @@ const button = theme => css`
   cursor: pointer;
   transition: color 0.3s ease;
   color: ${theme.colors.dark};
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
 
   ${mq("mediumUp")} {
     height: 68px;
@@ -77,17 +83,25 @@ const icons = {
   whatsapp: iconWhatsApp,
 }
 
-const Button = ({ children, icon }) => (
+const Button = ({ children, icon, url }) => (
   <div css={button}>
-    <div css={buttonContainer}>
-      {icon && icon in icons && (
-        <i css={buttonIcon}>
-          <img src={icons[icon]} alt={children} />
-        </i>
-      )}
-      <span css={buttonLabel}>{children}</span>
-    </div>
+    <a href={url} target="_blanc" rel="noopener">
+      <div css={buttonContainer}>
+        {icon && icon in icons && (
+          <i css={buttonIcon}>
+            <img src={icons[icon]} alt={children} />
+          </i>
+        )}
+        <span css={buttonLabel}>{children}</span>
+      </div>
+    </a>
   </div>
 )
+
+Button.propTypes = {
+  children: PropTypes.node.isRequired,
+  icon: PropTypes.string,
+  url: PropTypes.string,
+}
 
 export default Button

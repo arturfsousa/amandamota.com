@@ -4,6 +4,8 @@ import { css } from "@emotion/core"
 import { ThemeProvider } from "emotion-theming"
 import { StaticQuery, graphql } from "gatsby"
 
+import mq from "../styles/responsive"
+
 import Header from "./Header"
 import theme from "../styles/theme"
 
@@ -15,7 +17,11 @@ const main = theme => css`
   position: relative;
   margin: 0 auto;
   max-width: ${theme.grid.maxWidth};
-  padding: 1.5rem ${theme.grid.colPadding} 1.5rem;
+  padding: 1.5rem;
+
+  ${mq("mediumUp")} {
+    padding: 1.5rem ${theme.grid.colPadding} 1.5rem;
+  }
 `
 
 const Layout = ({ children }) => (

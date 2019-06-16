@@ -2,37 +2,60 @@ import React from "react"
 import PropTypes from "prop-types"
 import { css } from "@emotion/core"
 
+import mq from "../styles/responsive"
+
 const head = theme => css`
   font-family: ${theme.typography.antonio};
   font-weight: 300;
-  font-size: 2.68rem;
+  font-size: 2.2rem;
   color: ${theme.colors.dark};
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
   border-bottom: 1px solid ${theme.colors.gray["100"]};
-  padding: 0 0 30px 0;
-  margin: 0 0 30px 0;
+  padding: 0 0 20px 0;
+  margin: 0 0 20px 0;
+
+  ${mq("mediumUp")} {
+    font-size: 2.68rem;
+    padding: 0 0 30px 0;
+    margin: 0 0 30px 0;
+  }
 `
 
 const circle = theme => css`
   border-radius: 50%;
-  width: 12px;
-  height: 12px;
   background-color: ${theme.colors.hover};
   display: inline-block;
-  margin: 0 15px;
+  margin: 0 10px;
+  width: 10px;
+  height: 10px;
+
+  ${mq("mediumUp")} {
+    margin: 0 15px;
+    width: 12px;
+    height: 12px;
+  }
 `
 
 const circleLg = theme => css`
   ${circle(theme)};
-  width: 15px;
-  height: 15px;
+  width: 12px;
+  height: 12px;
+
+  ${mq("mediumUp")} {
+    width: 15px;
+    height: 15px;
+  }
 `
 
 const text = css`
-  margin: 0 20px;
+  margin: 0 10px;
+
+  ${mq("mediumUp")} {
+    margin: 0 20px;
+  }
 `
 
 const Head = ({ children }) => (

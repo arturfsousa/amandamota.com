@@ -6,6 +6,7 @@ const breakpoints = {
   mediumUp: "@media screen and (min-width: 40em)",
   large: "@media screen and (min-width: 64em) and (max-width: 74.9375em)",
   largeUp: "@media screen and (min-width: 64em)",
+  xlargeUp: "@media screen and (min-width: 75em)",
 }
 
 const mq = breakpoint => breakpoints[breakpoint]

@@ -33,6 +33,10 @@ const section = theme => css`
 `
 
 const sectionText = css`
+  p:last-child {
+    margin-bottom: 0;
+  }
+
   ${mq("mediumUp")} {
     max-width: 590px;
   }

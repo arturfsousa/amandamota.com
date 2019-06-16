@@ -7,6 +7,14 @@
 }
 
 @font-face {
+  font-family: "Antonio";
+  font-style: normal;
+  font-weight: 300;
+  src: url(../fonts/Antonio-Light.woff2) format("woff2");
+  font-display: fallback;
+}
+
+@font-face {
   font-family: "MyriadPro";
   font-style: normal;
   font-weight: 400;

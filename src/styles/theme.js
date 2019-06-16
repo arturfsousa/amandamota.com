@@ -8,7 +8,11 @@ export default {
   colors: {
     primary: "rgb(128,161,212)",
     hover: "rgb(175,200,234)",
-    dark: "rgb(53,69,94)",
+    dark: "rgb(52,69,92)",
+    gray: {
+      50: "#F4F4F4",
+      100: "#EDEDED",
+    },
   },
   grid: {
     maxWidth: "64rem",

@@ -4,8 +4,13 @@
   "description": "Dra Amanda Mota professional website",
   "version": "0.1.0",
   "author": "Artur Sousa <arturfelipe.sousa@gmail.com>",
+  "engines": {
+    "node": ">=11.6.0"
+  },
   "dependencies": {
     "@emotion/core": "^10.0.7",
+    "@material-ui/core": "^3.9.3",
+    "@material-ui/icons": "^3.0.2",
     "emotion-theming": "^10.0.7",
     "gatsby": "^2.1.18",
     "gatsby-image": "^2.0.30",

@@ -11,7 +11,7 @@ const fixedContainer = css`
   position: fixed;
   width: 100%;
   left: 0;
-  bottom: 30px;
+  bottom: 80px;
 
   ${mq("mediumUp")} {
     bottom: 80px;

@@ -2,19 +2,28 @@ import React from "react"
 import { Link } from "gatsby"
 import { css } from "@emotion/core"
 import mq from "../styles/responsive"
+import {
+  Info,
+  InsertDriveFile,
+  Assignment,
+  Spa,
+  Mail,
+} from "@material-ui/icons"
 
 const menu = theme => css`
   width: 100%;
-  position: absolute;
-  top: ${theme.header.height.small};
+  position: fixed;
+  // top: ${theme.header.height.small};
+  bottom: 0;
   left: 0;
   z-index: 1;
-  background-color: ${theme.colors.primary};
+  background-color: white;
 
   ${mq("mediumUp")} {
     width: auto;
     position: relative;
     top: unset;
+    bottom: unset;
     left: unset;
     background-color: transparent;
   }
@@ -22,17 +31,13 @@ const menu = theme => css`
 
 const menuItems = theme => css`
   display: flex;
-  flex-direction: column;
   margin: 0;
   list-style: none;
-
-  ${mq("mediumUp")} {
-    flex-direction: row;
-  }
 
   li {
     margin: 0;
     text-align: center;
+    flex: 1;
 
     ${mq("mediumUp")} {
       margin-left: 35px;
@@ -49,21 +54,24 @@ const menuItems = theme => css`
 const menuItem = theme => css`
   width: 100%;
   height: 100%;
-  color: ${theme.colors.hover};
+  color: #838384;
   text-decoration: none;
-  text-transform: uppercase;
-  font-size: 14px;
+  font-size: 9px;
   transition: color 0.4s ease;
-  padding: 5px 0;
+  padding: 10px 0;
   border-bottom: none;
-  border-top: 1px solid ${theme.colors.hover};
-  display: none;
+  border-top: 1px solid #eaeaea;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 
   ${mq("mediumUp")} {
-    display: inline-block;
     padding: 0;
     border-top: none;
     font-size: 17px;
+    color: ${theme.colors.hover};
+    text-transform: uppercase;
   }
 
   &:hover {
@@ -73,20 +81,37 @@ const menuItem = theme => css`
   }
 
   &.active {
-    color: white;
+    color: ${theme.colors.primary};
 
     ${mq("mediumUp")} {
+      color: white;
       border-bottom: 1px solid black;
     }
   }
 `
 
+const menuLabel = css`
+  display: block;
+  line-height: 1;
+`
+
+const menuIcon = css`
+  display: block;
+  width: 24px;
+  height: 24px;
+  margin-bottom: 6px;
+
+  ${mq("mediumUp")} {
+    display: none;
+  }
+`
+
 const items = [
-  { to: "/sobre/", label: "Sobre" },
-  { to: "/exames/", label: "Exames" },
-  { to: "/tratamentos/", label: "Tratamentos" },
-  { to: "/artigos/", label: "Artigos" },
-  { to: "/contato/", label: "Contato" },
+  { to: "/sobre/", label: "Sobre", icon: <Info /> },
+  { to: "/exames/", label: "Exames", icon: <Assignment /> },
+  { to: "/tratamentos/", label: "Tratamentos", icon: <Spa /> },
+  { to: "/artigos/", label: "Artigos", icon: <InsertDriveFile /> },
+  { to: "/contato/", label: "Contato", icon: <Mail /> },
 ]
 
 const Menu = () => (
@@ -95,7 +120,8 @@ const Menu = () => (
       {items.map(item => (
         <li key={item.to}>
           <Link to={item.to} css={menuItem} activeClassName={"active"}>
-            {item.label}
+            <span css={menuIcon}>{item.icon}</span>
+            <span css={menuLabel}>{item.label}</span>
           </Link>
         </li>
       ))}

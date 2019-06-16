@@ -1,7 +1,7 @@
 export default {
   header: {
     height: {
-      small: "50px",
+      small: "70px",
       large: "105px",
     },
   },

@@ -5,7 +5,8 @@ import SEO from "../components/SEO"
 import Button from "../components/Button"
 import mq from "../styles/responsive"
 
-import bgHome from "../images/bg-home.png"
+import bgHomeLarge from "../images/bg-home.png"
+import bgHomeSmall from "../images/bg-home-sm.png"
 
 const fixedContainer = css`
   position: fixed;
@@ -25,6 +26,12 @@ const gridContainer = theme => css`
   display: flex;
   align-items: flex-start;
 `
+
+const bgHome = {
+  default: bgHomeLarge,
+  large: bgHomeLarge,
+  small: bgHomeSmall,
+}
 
 const IndexPage = () => (
   <Layout bgImage={bgHome}>

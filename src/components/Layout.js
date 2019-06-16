@@ -12,10 +12,11 @@ import "../styles/reset.css"
 import "../styles/fonts.css"
 import "../styles/base.css"
 
-const background = imageUrl => theme =>
+const background = image => theme =>
   css`
-    background: url(${imageUrl}) no-repeat center center;
-    background-size: cover;
+    background: #f3f5f3 url(${image.small || image.default}) no-repeat bottom
+      130px right;
+    background-size: contain;
     position: fixed;
     top: ${theme.header.height.small};
     left: 0;
@@ -24,6 +25,13 @@ const background = imageUrl => theme =>
 
     ${mq("mediumUp")} {
       top: ${theme.header.height.large};
+      background-image: url(${image.large || image.default});
+      background-position: bottom 160px right;
+    }
+
+    ${mq("largeUp")} {
+      background-size: cover;
+      background-position: center center;
     }
   `
 

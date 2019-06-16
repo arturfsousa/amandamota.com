@@ -32,7 +32,7 @@ const headerLogo = css`
   align-items: center;
 
   img {
-    width: 160px;
+    width: 180px;
     margin: 0;
 
     ${mq("mediumUp")} {

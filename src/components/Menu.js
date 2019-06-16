@@ -13,13 +13,12 @@ import {
 const menu = theme => css`
   width: 100%;
   position: fixed;
-  // top: ${theme.header.height.small};
   bottom: 0;
   left: 0;
   z-index: 1;
   background-color: white;
 
-  ${mq("mediumUp")} {
+  ${mq("largeUp")} {
     width: auto;
     position: relative;
     top: unset;
@@ -39,13 +38,13 @@ const menuItems = theme => css`
     text-align: center;
     flex: 1;
 
-    ${mq("mediumUp")} {
+    ${mq("largeUp")} {
       margin-left: 35px;
     }
   }
 
   li:first-of-type {
-    ${mq("mediumUp")} {
+    ${mq("largeUp")} {
       margin-left: 0;
     }
   }
@@ -66,7 +65,7 @@ const menuItem = theme => css`
   justify-content: center;
   flex-direction: column;
 
-  ${mq("mediumUp")} {
+  ${mq("largeUp")} {
     padding: 0;
     border-top: none;
     font-size: 17px;
@@ -75,7 +74,7 @@ const menuItem = theme => css`
   }
 
   &:hover {
-    ${mq("mediumUp")} {
+    ${mq("largeUp")} {
       color: white;
     }
   }
@@ -83,7 +82,7 @@ const menuItem = theme => css`
   &.active {
     color: ${theme.colors.primary};
 
-    ${mq("mediumUp")} {
+    ${mq("largeUp")} {
       color: white;
       border-bottom: 1px solid black;
     }
@@ -101,7 +100,7 @@ const menuIcon = css`
   height: 24px;
   margin-bottom: 6px;
 
-  ${mq("mediumUp")} {
+  ${mq("largeUp")} {
     display: none;
   }
 `

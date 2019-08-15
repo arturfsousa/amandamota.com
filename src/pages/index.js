@@ -13,10 +13,11 @@ const fixedContainer = css`
   position: fixed;
   width: 100%;
   left: 0;
-  bottom: 80px;
+  top: 100px;
 
   ${mq("mediumUp")} {
     bottom: 80px;
+    top: initial;
   }
 `
 
@@ -26,6 +27,7 @@ const gridContainer = theme => css`
   padding: 0 ${theme.grid.colPadding};
   display: flex;
   align-items: flex-start;
+  justify-content: center;
 `
 
 const bgImage = theme =>

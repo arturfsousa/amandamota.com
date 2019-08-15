@@ -8,7 +8,7 @@ import iconWhatsApp from "../images/icon-whatsapp.svg"
 
 const button = theme => css`
   display: inline-block;
-  height: 48px;
+  height: 60px;
   border: 2px dashed #888;
   border-radius: 40px;
   cursor: pointer;
@@ -70,7 +70,7 @@ const buttonLabel = theme => css`
   padding: 0 10px;
   font-family: ${theme.typography.antonio};
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 1.3rem;
   letter-spacing: -0.02rem;
   text-transform: lowercase;
 

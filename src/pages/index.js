@@ -36,23 +36,28 @@ const gridContainer = theme => css`
 
 const bgImage = theme =>
   css`
-    background: #f3f5f3 url(${bgHomeSmall}) no-repeat bottom 130px right;
+    background: #f3f5f3 url(${bgHomeSmall}) no-repeat bottom right;
     background-size: contain;
     position: fixed;
-    top: ${theme.header.height.small};
+    // top: ${theme.header.height.small};
+    bottom: 60px;
     left: 0;
-    height: 100vh;
+    height: calc(100vh - 130px);
     width: 100%;
 
     ${mq("mediumUp")} {
-      top: ${theme.header.height.large};
+      // top: ${theme.header.height.large};
       background-image: url(${bgHomeLarge});
-      background-position: bottom 160px right;
+      // background-position: bottom 160px right;
+      height: calc(100vh - 190px);
     }
 
     ${mq("largeUp")} {
       background-size: cover;
       background-position: center center;
+      height: 100vh;
+      top: ${theme.header.height.large};
+      bottom: initial;
     }
   `
 

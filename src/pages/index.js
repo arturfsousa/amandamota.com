@@ -42,14 +42,14 @@ const bgImage = theme =>
     // top: ${theme.header.height.small};
     bottom: 60px;
     left: 0;
-    height: calc(100vh - 130px);
+    height: 400px;
     width: 100%;
 
     ${mq("mediumUp")} {
       // top: ${theme.header.height.large};
       background-image: url(${bgHomeLarge});
       // background-position: bottom 160px right;
-      height: calc(100vh - 190px);
+      height: 400px;
     }
 
     ${mq("largeUp")} {

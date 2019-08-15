@@ -28,6 +28,10 @@ const gridContainer = theme => css`
   display: flex;
   align-items: flex-start;
   justify-content: center;
+
+  ${mq("mediumUp")} {
+    justify-content: flex-start;
+  }
 `
 
 const bgImage = theme =>

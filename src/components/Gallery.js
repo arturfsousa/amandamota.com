@@ -2,8 +2,6 @@ import React from "react"
 import PropTypes from "prop-types"
 import { css } from "@emotion/core"
 
-import mq from "../styles/responsive"
-
 const body = css`
   padding-bottom: 20px;
   display: grid;

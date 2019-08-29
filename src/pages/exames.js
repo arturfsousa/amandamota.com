@@ -8,46 +8,28 @@ import Gallery from "../components/Gallery"
 import GalleryGroup from "../components/GalleryGroup"
 import GalleryItem from "../components/GalleryItem"
 
-import treatment1 from "../images/treatment-1.png"
+import imgExam1 from "../images/exam-biopsia-da-pele-e-couro-cabeludo.jpg"
 import treatment2 from "../images/treatment-2.png"
 import treatment3 from "../images/treatment-3.png"
 
 const galleryItems = [
   [
     {
-      title: "Skin Booster",
+      title: "Dermatoscopia",
       description:
-        "Hidratação profunda para maior suavidade, elasticidade, firmeza e melhora da aparência da pele.",
-      imageUrl: treatment1,
+        "Técnica não invasiva que permite a observação de estruturas da pele que não são observadas a olho nu. Auxilia na diferenciação de lesões malignas e benignas, permitindo diagnósticos mais precisos, evitando-se cirurgias desnecessárias e aumentando a chance da identificação de lesões suspeitas na fase inicial.",
+      imageUrl: imgExam1,
     },
     {
-      title: "Luz Intensa Pulsada",
+      title: "Tricoscopia",
       description:
-        "Reduz manchas solares, sardas, trata rugas, poros dilatados e mudanças na textura da pele.",
+        "Técnica realizada com dermatoscopio para identificar alterações da haste capilar, padrão da vascularização, pigmentação da pele, números de hastes por folículo e pedromínio da área capilar com alterações. Permite o diagnóstico de doenças e o acompanhamento mais detalhado de resposta ao tratamento.",
       imageUrl: treatment2,
     },
     {
-      title: "Preenchimento",
+      title: "Biópsia da pele e couro cabeludo",
       description:
-        "Para repor volume facial, dos lábios, contorno facial e amenizar bigode chinês, olheiras e rugas.",
-      imageUrl: treatment3,
-    },
-    {
-      title: "Skin Booster",
-      description:
-        "Hidratação profunda para maior suavidade, elasticidade, firmeza e melhora da aparência da pele.",
-      imageUrl: treatment1,
-    },
-    {
-      title: "Luz Intensa Pulsada",
-      description:
-        "Reduz manchas solares, sardas, trata rugas, poros dilatados e mudanças na textura da pele.",
-      imageUrl: treatment2,
-    },
-    {
-      title: "Preenchimento",
-      description:
-        "Para repor volume facial, dos lábios, contorno facial e amenizar bigode chinês, olheiras e rugas.",
+        "Em casos específicos, é necessária a realização de biópsia direcionada para obtenção do diagnóstico final. O procedimento é realizado no consultório sob anestesia local e enviado para análise pelo dermatopatologista.",
       imageUrl: treatment3,
     },
   ],

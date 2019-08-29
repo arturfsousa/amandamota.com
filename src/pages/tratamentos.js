@@ -15,153 +15,81 @@ import treatment3 from "../images/treatment-3.png"
 const galleryItems = [
   [
     {
-      title: "Skin Booster",
+      title: "Cirúrgico",
       description:
-        "Hidratação profunda para maior suavidade, elasticidade, firmeza e melhora da aparência da pele.",
+        "Remoção de pequenos pólipos, nevos, cistos, eletrocoagulação de verrugas e dermatoses papulosas.",
       imageUrl: treatment1,
+    },
+    {
+      title: "Crioterapia",
+      description:
+        "Para tratamento de lesões pré malignas e verrugas, através de spray de nitrogênio líquido, de forma rápida, no consultório, evitando-se cortes e prevenindo lesões mais graves.",
+      imageUrl: treatment2,
     },
     {
       title: "Luz Intensa Pulsada",
       description:
-        "Reduz manchas solares, sardas, trata rugas, poros dilatados e mudanças na textura da pele.",
-      imageUrl: treatment2,
-    },
-    {
-      title: "Preenchimento",
-      description:
-        "Para repor volume facial, dos lábios, contorno facial e amenizar bigode chinês, olheiras e rugas.",
+        "Reduz manchas solares, sardas, trata rugas, poros dilatados e melhora a textura da pele.",
       imageUrl: treatment3,
     },
     {
-      title: "Skin Booster",
+      title: "Depilação a laser",
       description:
-        "Hidratação profunda para maior suavidade, elasticidade, firmeza e melhora da aparência da pele.",
+        "Realizado com maior segurança por médico dermatologista para remoção de pelos de forma mais duradoura.",
       imageUrl: treatment1,
     },
     {
-      title: "Luz Intensa Pulsada",
-      description:
-        "Reduz manchas solares, sardas, trata rugas, poros dilatados e mudanças na textura da pele.",
-      imageUrl: treatment2,
-    },
-    {
-      title: "Preenchimento",
-      description:
-        "Para repor volume facial, dos lábios, contorno facial e amenizar bigode chinês, olheiras e rugas.",
-      imageUrl: treatment3,
-    },
-  ],
-  [
-    {
       title: "Skin Booster",
       description:
-        "Hidratação profunda para maior suavidade, elasticidade, firmeza e melhora da aparência da pele.",
-      imageUrl: treatment1,
-    },
-    {
-      title: "Luz Intensa Pulsada",
-      description:
-        "Reduz manchas solares, sardas, trata rugas, poros dilatados e mudanças na textura da pele.",
+        "Hidratação profunda injetável para melhora da qualidade, firmeza da pele e das rugas finas.",
       imageUrl: treatment2,
     },
     {
-      title: "Preenchimento",
+      title: "Microagulhamento",
       description:
-        "Para repor volume facial, dos lábios, contorno facial e amenizar bigode chinês, olheiras e rugas.",
+        "O estímulo produzido pelas agulhas leva à produção de fatores de crescimento que auxiliam no tratamento do melasma, cicatrizes de acne, alopecia e estímulo de colágeno.",
       imageUrl: treatment3,
     },
     {
-      title: "Skin Booster",
+      title: "Drug delirery",
       description:
-        "Hidratação profunda para maior suavidade, elasticidade, firmeza e melhora da aparência da pele.",
-      imageUrl: treatment1,
-    },
-    {
-      title: "Luz Intensa Pulsada",
-      description:
-        "Reduz manchas solares, sardas, trata rugas, poros dilatados e mudanças na textura da pele.",
-      imageUrl: treatment2,
-    },
-    {
-      title: "Preenchimento",
-      description:
-        "Para repor volume facial, dos lábios, contorno facial e amenizar bigode chinês, olheiras e rugas.",
-      imageUrl: treatment3,
-    },
-  ],
-  [
-    {
-      title: "Skin Booster",
-      description:
-        "Hidratação profunda para maior suavidade, elasticidade, firmeza e melhora da aparência da pele.",
-      imageUrl: treatment1,
-    },
-    {
-      title: "Luz Intensa Pulsada",
-      description:
-        "Reduz manchas solares, sardas, trata rugas, poros dilatados e mudanças na textura da pele.",
-      imageUrl: treatment2,
-    },
-    {
-      title: "Preenchimento",
-      description:
-        "Para repor volume facial, dos lábios, contorno facial e amenizar bigode chinês, olheiras e rugas.",
+        "O uso de tecnologias como o laser fracionado e o microagulhamento aumentam a permeabilidade da pele à penetração de princípios ativos selecionados para proporcionar resultados superiores aos tratamentos tópicos.",
       imageUrl: treatment3,
     },
     {
-      title: "Skin Booster",
+      title: "Peeling químico",
       description:
-        "Hidratação profunda para maior suavidade, elasticidade, firmeza e melhora da aparência da pele.",
-      imageUrl: treatment1,
-    },
-    {
-      title: "Luz Intensa Pulsada",
-      description:
-        "Reduz manchas solares, sardas, trata rugas, poros dilatados e mudanças na textura da pele.",
-      imageUrl: treatment2,
-    },
-    {
-      title: "Preenchimento",
-      description:
-        "Para repor volume facial, dos lábios, contorno facial e amenizar bigode chinês, olheiras e rugas.",
-      imageUrl: treatment3,
-    },
-  ],
-  [
-    {
-      title: "Skin Booster",
-      description:
-        "Hidratação profunda para maior suavidade, elasticidade, firmeza e melhora da aparência da pele.",
-      imageUrl: treatment1,
-    },
-    {
-      title: "Luz Intensa Pulsada",
-      description:
-        "Reduz manchas solares, sardas, trata rugas, poros dilatados e mudanças na textura da pele.",
-      imageUrl: treatment2,
-    },
-    {
-      title: "Preenchimento",
-      description:
-        "Para repor volume facial, dos lábios, contorno facial e amenizar bigode chinês, olheiras e rugas.",
+        "Indicado para tratamento de manchas na pele, poros dilatados, acne, oleosidade e rejuvenescimento.",
       imageUrl: treatment3,
     },
     {
-      title: "Skin Booster",
-      description:
-        "Hidratação profunda para maior suavidade, elasticidade, firmeza e melhora da aparência da pele.",
-      imageUrl: treatment1,
-    },
-    {
-      title: "Luz Intensa Pulsada",
-      description:
-        "Reduz manchas solares, sardas, trata rugas, poros dilatados e mudanças na textura da pele.",
-      imageUrl: treatment2,
-    },
-    {
       title: "Preenchimento",
       description:
-        "Para repor volume facial, dos lábios, contorno facial e amenizar bigode chinês, olheiras e rugas.",
+        "Indicado para reposicionamento do volume facial, amenizar olheiras, bigode chinês, rugas e aumento labial.",
+      imageUrl: treatment3,
+    },
+    {
+      title: "Fotobioestimulação",
+      description:
+        "Dispomos de equipamento para aplicação de laser diodo de baixa potência associado ao LED para promover vasodilatação, aumentando o aporte de nutrientes aos folículos pilosos, ação antioxidante e anti-inflamatória, auxiliando no tratamento das alopecias.",
+      imageUrl: treatment3,
+    },
+    {
+      title: "Mesoterapia",
+      description:
+        "É uma técnica com aplicação de microinjeções de substâncias selecionadas no couro cabeludo para auxiliar no crescimento dos fios.",
+      imageUrl: treatment3,
+    },
+    {
+      title: "Laser",
+      description:
+        "Tecnologia utilizada de diferentes formas para tratamento de rugas, manchas na pele, cicatrizes de acne, estrias, cicatrizes e alopecia.",
+      imageUrl: treatment3,
+    },
+    {
+      title: "Toxina Botulínica",
+      description:
+        "Tramento de indicado para rugas dinâmicas, causada pelo movimento dos músculos da face, para prevenção de rugas fixas e mais profundas.",
       imageUrl: treatment3,
     },
   ],

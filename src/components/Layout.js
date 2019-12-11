@@ -17,6 +17,7 @@ const main = theme => css`
   margin: 0 auto;
   max-width: ${theme.grid.maxWidth};
   padding: 1.5rem;
+  padding-top: 95px;
   padding-bottom: 60px;
 
   ${mq("mediumUp")} {

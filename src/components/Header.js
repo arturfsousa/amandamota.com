@@ -11,9 +11,15 @@ const header = theme =>
   css`
     background-color: ${theme.colors.primary};
     height: ${theme.header.height.small};
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
 
     ${mq("mediumUp")} {
       height: ${theme.header.height.large};
+      position: unset;
     }
   `
 

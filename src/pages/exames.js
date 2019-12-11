@@ -8,9 +8,9 @@ import Gallery from "../components/Gallery"
 import GalleryGroup from "../components/GalleryGroup"
 import GalleryItem from "../components/GalleryItem"
 
-import imgExam1 from "../images/exam-biopsia-da-pele-e-couro-cabeludo.jpg"
-import treatment2 from "../images/treatment-2.png"
-import treatment3 from "../images/treatment-3.png"
+import imgExam1 from "../data/images/exam-dermatoscopia.jpg"
+import imgExam2 from "../data/images/exam-tricoscopia.jpg"
+import imgExam3 from "../data/images/exam-biopsia-da-pele-e-couro-cabeludo.jpg"
 
 const galleryItems = [
   [
@@ -24,13 +24,13 @@ const galleryItems = [
       title: "Tricoscopia",
       description:
         "Técnica realizada com dermatoscopio para identificar alterações da haste capilar, padrão da vascularização, pigmentação da pele, números de hastes por folículo e pedromínio da área capilar com alterações. Permite o diagnóstico de doenças e o acompanhamento mais detalhado de resposta ao tratamento.",
-      imageUrl: treatment2,
+      imageUrl: imgExam2,
     },
     {
       title: "Biópsia da pele e couro cabeludo",
       description:
         "Em casos específicos, é necessária a realização de biópsia direcionada para obtenção do diagnóstico final. O procedimento é realizado no consultório sob anestesia local e enviado para análise pelo dermatopatologista.",
-      imageUrl: treatment3,
+      imageUrl: imgExam3,
     },
   ],
 ]

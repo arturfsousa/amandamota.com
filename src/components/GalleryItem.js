@@ -12,7 +12,6 @@ const root = css`
 `
 
 const article = css`
-  max-height: 405px;
   height: 100%;
   overflow: hidden;
   border-radius: 10px;
@@ -24,6 +23,7 @@ const article = css`
 const image = css`
   img {
     width: 100%;
+    display: block;
   }
 `
 
@@ -47,9 +47,9 @@ const body = css`
   }
 `
 
-const GalleryItem = ({ title, description, imageUrl, url }) => (
-  <div css={root}>
-    <a href={url || "#"}>
+const GalleryItem = ({ title, description, imageUrl }) => {
+  return (
+    <div css={root}>
       <article css={article}>
         {imageUrl && (
           <div css={image}>
@@ -61,15 +61,14 @@ const GalleryItem = ({ title, description, imageUrl, url }) => (
           {description && <p>{description}</p>}
         </div>
       </article>
-    </a>
-  </div>
-)
+    </div>
+  )
+}
 
 GalleryItem.propTypes = {
   title: PropTypes.string.isRequired,
   description: PropTypes.string,
   imageUrl: PropTypes.string,
-  url: PropTypes.string,
 }
 
 export default GalleryItem

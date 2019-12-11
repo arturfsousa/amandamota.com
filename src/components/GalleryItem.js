@@ -31,7 +31,7 @@ const head = theme => css`
   font-family: ${theme.typography.antonio};
   font-weight: 700;
   font-size: 1rem;
-  color: #34455c;
+  color: ${theme.colors.dark};
   text-transform: uppercase;
   padding-bottom: 10px;
   margin: 0;

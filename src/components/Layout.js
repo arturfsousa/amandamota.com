@@ -1,6 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
-import { css } from "@emotion/core"
+import { Global, css } from "@emotion/core"
 import { ThemeProvider } from "emotion-theming"
 import { StaticQuery, graphql } from "gatsby"
 
@@ -11,7 +11,6 @@ import theme from "../styles/theme"
 
 import "../styles/reset.css"
 import "../styles/fonts.css"
-import "../styles/base.css"
 
 const main = theme => css`
   position: relative;
@@ -38,6 +37,23 @@ const Layout = ({ children }) => (
     `}
     render={data => (
       <ThemeProvider theme={theme}>
+        <Global
+          styles={css`
+            body {
+              background-color: ${theme.colors.gray[50]};
+              color: ${theme.colors.dark};
+            }
+
+            a {
+              color: ${theme.colors.strong};
+              transition: color 0.4s ease;
+
+              &:hover {
+                color: ${theme.colors.primary};
+              }
+            }
+          `}
+        />
         <Header siteName={data.site.siteMetadata.siteName} />
         <main css={main}>{children}</main>
       </ThemeProvider>

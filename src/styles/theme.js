@@ -8,10 +8,11 @@ export default {
   colors: {
     primary: "rgb(128,161,212)",
     hover: "rgb(175,200,234)",
+    strong: "rgb(71, 112, 170)",
     dark: "rgb(52,69,92)",
     gray: {
-      50: "#F4F4F4",
-      100: "#EDEDED",
+      50: "#f4f4f4",
+      100: "#ededed",
       200: "#bdbec0",
     },
   },

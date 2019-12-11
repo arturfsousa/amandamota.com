@@ -8,7 +8,6 @@ import Head from "../components/Head"
 
 const section = theme => css`
   text-align: center;
-  color: #34455c;
   font-size: 1rem;
   margin-top: 40px;
 

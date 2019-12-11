@@ -10,14 +10,13 @@ import bgAbout from "../images/bg-about.png"
 
 const section = theme => css`
   margin-top: 30px;
-  color: #34455c;
   font-size: 1rem;
   padding: 0;
   min-height: 1250px;
   background: url(${bgAbout}) no-repeat bottom center;
 
   strong {
-    color: #4770aa;
+    color: ${theme.colors.strong};
   }
 
   ${mq("mediumUp")} {

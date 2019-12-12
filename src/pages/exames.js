@@ -23,7 +23,7 @@ const galleryItems = [
     {
       title: "Tricoscopia",
       description:
-        "Técnica realizada com dermatoscópio para identificar alterações da haste capilar, padrão da vascularização, pigmentação da pele, números de hastes por folículo e pedromínio da área capilar com alterações. Permite o diagnóstico de doenças e o acompanhamento mais detalhado de resposta ao tratamento.",
+        "Técnica realizada com dermatoscópio para identificar alterações da haste capilar, padrão da vascularização, pigmentação da pele, números de hastes por folículo e predomínio da área capilar com alterações. Permite o diagnóstico de doenças e o acompanhamento mais detalhado de resposta ao tratamento.",
       imageUrl: imgExam2,
     },
     {

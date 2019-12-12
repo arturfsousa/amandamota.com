@@ -2,6 +2,8 @@ import React from "react"
 import PropTypes from "prop-types"
 import { css } from "@emotion/core"
 
+import mq from "../styles/responsive"
+
 const root = css`
   flex: 1;
 
@@ -44,6 +46,10 @@ const body = css`
   p {
     padding: 10px 0 0;
     margin: 0;
+
+    ${mq("mediumUp")} {
+      font-size: 15px;
+    }
   }
 `
 

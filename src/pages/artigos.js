@@ -147,6 +147,20 @@ const ArtigosPage = () => (
         Atrophic dermatofibroma. Anais Brasileiros de Dermatologia (Online), v.
         88, p. 793-795, 2013.
       </Article>
+      <Article url="https://pubmed.ncbi.nlm.nih.gov/32592215/">
+        <a href={LATES_URL} target="_blank" rel="noopener noreferrer">
+          Mota ANCM, De Carvalho N
+        </a>
+        , Pellacani G, de Faria PCP, Melo DF, Pineiro-Maceira JM, Barcaui CB.
+        Reflectance confocal microscopy in actinic keratosis-Comparison of
+        efficacy between cryotherapy protocols. Skin Res Technol. 2020
+        Nov;26(6):876-882. doi: 10.1111/srt.12889. Epub 2020 Jun 26. PMID:
+        32592215.
+      </Article>
+      <Article url="https://onlinelibrary.wiley.com/doi/10.1111/srt.12852">
+        Concordance among in vivo reflectance confocal microscopy, trichoscopy,
+        and histopathology in the evaluation of scalp discoid lupus.
+      </Article>
     </section>
   </Layout>
 )

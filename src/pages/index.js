@@ -61,7 +61,7 @@ const bgImage = theme =>
     }
   `
 
-const whatsAppNumber = "5521995555595"
+const whatsAppNumber = "5521995392015"
 const whatsAppMessage = encodeURIComponent(
   "Olá Dr. Amanda! Gostaria de agentar uma consulta."
 )

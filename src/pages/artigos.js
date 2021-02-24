@@ -16,6 +16,7 @@ import articleFile4 from "../data/articles/dpc0304a03_retiformhemangioendothelio
 import articleFile5 from "../data/articles/0365-0596-abd-88-06-s1-0078_esclerosesistemica.pdf"
 import articleFile6 from "../data/articles/0365-0596-abd-88-06-s1-0143_liquenaureus.pdf"
 import articleFile7 from "../data/articles/0365-0596-abd-88-05-0793_dermatofibroma.pdf"
+import articleFile8 from "../data/articles/art_rev.pdf"
 
 const LATES_URL = "http://lattes.cnpq.br/7482608959301965"
 
@@ -149,17 +150,33 @@ const ArtigosPage = () => (
       </Article>
       <Article url="https://pubmed.ncbi.nlm.nih.gov/32592215/">
         <a href={LATES_URL} target="_blank" rel="noopener noreferrer">
-          Mota ANCM, De Carvalho N
+          MOTA ANCM
         </a>
-        , Pellacani G, de Faria PCP, Melo DF, Pineiro-Maceira JM, Barcaui CB.
-        Reflectance confocal microscopy in actinic keratosis-Comparison of
-        efficacy between cryotherapy protocols. Skin Res Technol. 2020
-        Nov;26(6):876-882. doi: 10.1111/srt.12889. Epub 2020 Jun 26. PMID:
-        32592215.
+        , DE CARVALHO, PELLACANI G, DE FARIA PCP, MELO DF, PINEIRO-MACEIRA JM,
+        BARCAUI CB. Reflectance confocal microscopy in actinic
+        keratosis-Comparison of efficacy between cryotherapy protocols. Skin Res
+        Technol. 2020 Nov;26(6):876-882. doi: 10.1111/srt.12889. Epub 2020 Jun
+        26. PMID: 32592215.
       </Article>
       <Article url="https://onlinelibrary.wiley.com/doi/10.1111/srt.12852">
-        Concordance among in vivo reflectance confocal microscopy, trichoscopy,
-        and histopathology in the evaluation of scalp discoid lupus.
+        DANIEL FERNANDES MELO, NATHALIE DE CARVALHO, MARCO ARDIGÒ, GIOVANNI
+        PELLACANI,{" "}
+        <a href={LATES_URL} target="_blank" rel="noopener noreferrer">
+          AMANDA NASCIMENTO CAVALLEIRO DE MACEDO MOTA
+        </a>
+        , TAYNARA DE MATTOS BARRETO, CARLA JORGE MACHADO, JUAN MANUEL
+        PINEIRO‐MACEIRA, CARLOS BAPTISTA BARCAUI. Concordance among in vivo
+        reflectance confocal microscopy, trichoscopy, and histopathology in the
+        evaluation of scalp discoid lupus.
+      </Article>
+      <Article fileUrl={articleFile8}>
+        MARIA RITA CARVALHO DE FREITAS AMORIM, INGRID RAMOS REIS COUTO, ESTHER
+        OLIVEIRA XAVIER DE BRITO,{" "}
+        <a href={LATES_URL} target="_blank" rel="noopener noreferrer">
+          AMANDA NASCIMENTO CAVALLEIRO DE MACEDO MOTA DA SILVA
+        </a>
+        , FLAVIA AMORIM MEIRA CAVALIERE. Manifestações dermatológicas associadas
+        à COVID-19.
       </Article>
     </section>
   </Layout>
